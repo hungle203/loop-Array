@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Menu.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ee7762;}
+.s1 { color: #f9f6ef;}
+.s2 { color: #ffc83c;}
+.s3 { color: #fd971f;}
+.s4 { color: #57d1eb;}
+.s5 { color: #92d923;}
+.s6 { color: #a97cf8;}
+.s7 { color: #ffd866;}
+</style>
+</head>
+<body bgcolor="#1b1a19">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Menu.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Thuchanh;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner;</span>
+
+<span class="s0">public class </span><span class="s1">Menu </span><span class="s3">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s4">(</span><span class="s1">String</span><span class="s5">[] </span><span class="s1">args</span><span class="s4">) </span><span class="s3">{</span>
+        <span class="s0">int </span><span class="s1">choice </span><span class="s6">= </span><span class="s4">1</span><span class="s1">;</span>
+        <span class="s0">int </span><span class="s1">triangle;</span>
+        <span class="s1">Scanner scanner </span><span class="s6">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s4">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s4">)</span><span class="s1">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Nhập vào giá trị choice&quot;</span><span class="s4">)</span><span class="s1">;</span>
+        <span class="s0">while </span><span class="s4">(</span><span class="s1">choice </span><span class="s6">!= </span><span class="s4">0) </span><span class="s3">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Menu&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;1. Draw the triangle&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;2. Draw the square&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;3. Draw the rectangle&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;0. Exit&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Enter your choice: &quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s1">choice </span><span class="s6">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s4">()</span><span class="s1">;</span>
+            <span class="s1">triangle </span><span class="s6">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s4">()</span><span class="s1">;</span>
+            <span class="s0">switch </span><span class="s4">(</span><span class="s1">choice</span><span class="s4">) </span><span class="s3">{</span>
+                <span class="s0">case </span><span class="s4">1</span><span class="s6">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Draw the triangle&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;******&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;*****&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;****&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;***&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;**&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;*&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">case </span><span class="s4">2</span><span class="s6">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Draw the square&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">case </span><span class="s4">3</span><span class="s6">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Draw the rectangle&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;* * * * * *&quot;</span><span class="s4">)</span><span class="s1">;</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s0">case </span><span class="s4">0</span><span class="s6">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">exit</span><span class="s4">(0)</span><span class="s1">;</span>
+                <span class="s0">default</span><span class="s6">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;No choice!&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s3">}</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>

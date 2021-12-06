@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ee7762;}
+.s1 { color: #f9f6ef;}
+.s2 { color: #ffc83c;}
+.s3 { color: #fd971f;}
+.s4 { color: #57d1eb;}
+.s5 { color: #92d923;}
+.s6 { color: #a97cf8;}
+.s7 { color: #ffd866;}
+</style>
+</head>
+<body bgcolor="#1b1a19">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Thuchanh;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner;</span>
+
+<span class="s0">public class </span><span class="s1">Main </span><span class="s3">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s4">(</span><span class="s1">String</span><span class="s5">[] </span><span class="s1">args</span><span class="s4">) </span><span class="s3">{</span>
+        <span class="s1">Scanner scanner </span><span class="s6">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s4">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s4">)</span><span class="s1">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Nhập một số&quot;</span><span class="s4">)</span><span class="s1">;</span>
+        <span class="s0">int </span><span class="s1">number </span><span class="s6">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s4">()</span><span class="s1">;</span>
+        <span class="s0">if </span><span class="s4">(</span><span class="s1">number </span><span class="s6">&lt; </span><span class="s4">2) </span><span class="s3">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Không phải số nguyên tố&quot;</span><span class="s4">)</span><span class="s1">;</span>
+        <span class="s3">}</span><span class="s0">else </span><span class="s3">{</span>
+            <span class="s0">int </span><span class="s1">i </span><span class="s6">= </span><span class="s4">2</span><span class="s1">;</span>
+            <span class="s0">boolean </span><span class="s1">check </span><span class="s6">= </span><span class="s0">true</span><span class="s1">;</span>
+            <span class="s0">while </span><span class="s4">(</span><span class="s1">i </span><span class="s6">&lt; </span><span class="s1">Math</span><span class="s2">.</span><span class="s1">sqrt</span><span class="s4">(</span><span class="s1">number</span><span class="s4">)) </span><span class="s3">{</span>
+                <span class="s0">if </span><span class="s4">(</span><span class="s1">number </span><span class="s6">% </span><span class="s1">i </span><span class="s6">== </span><span class="s4">0) </span><span class="s3">{</span>
+                    <span class="s1">check </span><span class="s6">= </span><span class="s0">false</span><span class="s1">;</span>
+                    <span class="s0">break</span><span class="s1">;</span>
+                <span class="s3">}</span>
+                <span class="s1">i </span><span class="s6">++</span><span class="s1">;</span>
+            <span class="s3">}</span>
+            <span class="s0">if </span><span class="s4">(</span><span class="s1">check</span><span class="s4">) </span><span class="s3">{</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Đây là số nguyên tố&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s3">}</span>
+            <span class="s0">else </span><span class="s3">{</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s4">(</span><span class="s7">&quot;Đây không phải số nguyên tố&quot;</span><span class="s4">)</span><span class="s1">;</span>
+            <span class="s3">}</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>
