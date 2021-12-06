@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
         int choice = 1;
-        int triangle;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào giá trị choice");
         while (choice != 0) {
@@ -16,7 +15,6 @@ public class Menu {
             System.out.println("0. Exit");
             System.out.println("Enter your choice: ");
             choice = scanner.nextInt();
-            triangle = scanner.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Draw the triangle");

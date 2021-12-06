@@ -19,6 +19,7 @@ public class SNT {
            }
            if (check) {
                count ++;
+
                System.out.println(number);
 
            }
